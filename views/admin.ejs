@@ -1,0 +1,28 @@
+<head>
+  <%- include('./partials/head'); %>
+</head>
+<body>
+  <header>
+    <%- include('./partials/header'); %>
+  </header>
+   <a href="/logout"><button class="logout btn btn-dark m-3" style="float:right;">Log Out</button></a>
+    <div class="mx-auto text-center p-5 m-5" id="kep-input-form">
+      <h3>Új termék:</h3>
+      <div class="mb-3">
+        <label for="nevInput" class="form-label">Név</label>
+        <input type="text" class="form-control" id="nevInput">
+      </div>
+      <div class="mb-3">
+        <label for="arInput" class="form-label">Ár</label>
+        <input type="text" class="form-control" id="arInput">
+      </div>
+      <div class="mb-3">
+        <label for="kepInput" class="form-label">Kép</label>
+        <input type="file" id="kepInput"></input>
+      </div>
+      <div class="mb-3">
+        <button id="img-upload" class="btn btn-warning">Elküld</button>
+      </div>
+    </div>
+</body>
+</html>

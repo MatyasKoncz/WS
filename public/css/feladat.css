@@ -1,0 +1,16 @@
+body{
+    background-color: white;
+}
+
+main {
+    max-width: 1200px;
+}
+
+.wrapper {
+    display:none;
+}
+
+#kep-input-form {
+    max-width: 500px;
+    background-color: grey;
+}

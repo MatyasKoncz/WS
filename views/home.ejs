@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <%- include('./partials/head'); %>
+</head>
+
+<body>
+  <header>
+    <%- include('./partials/header'); %>
+  </header>
+  <main class="mx-auto d-flex justify-content-between flex-wrap">
+
+      <% data.forEach(function(data) { %>
+        <div class="card mt-4" style="width: 18rem;">
+          <img src="<%= data.kep %>" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">
+              <%= data.nev %>
+            </h5>
+            <p class="card-text">
+              <%= data.ar %> HUF
+            </p>
+            <a href="#" class="btn btn-primary" data-id="<%= data.id %>" onclick="detailsButton(this)">Details</a>
+          </div>
+        </div>
+      <% }); %>
+
+      </main>
+
+</body>
+
+</html>
